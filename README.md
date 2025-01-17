@@ -1,33 +1,69 @@
-# React + TypeScript + Vite
+# Candidate Search
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Currently, two official plugins are available:
+## Table of Contents
 
-* [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md), which uses [Babel](https://babeljs.io/) for Fast Refresh
-* [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc), which uses [SWC](https://swc.rs/) for Fast Refresh
+- [Description](#description)
+- [User Story](#user-story)
+- [Acceptance Criteria](#acceptance-criteria)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#constributing)
+- [Questions](#questions)
 
-## Expanding the ESLint configuration
+## Description
 
-If you're developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This project helps employers to find the ideal candidates that will meet their hiring criteria. When the website loads, candidate card that include profile pic, name, usernmae, location, avatar, email and company they are currently employed. The website provides a local storage to saved the top candidates into a different tab and this will help employers review each details of each candidate more thouroughly. 
 
-* Configure the top-level `parserOptions` property as follows:
+##
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+### Video Link
+
+[Candidate Search](https://drive.google.com/file/d/1PPqowzedst_aaUNjipB9CQ27SzxGIqP0/view?usp=drive_link)
+
+## User Story
+```
+AS AN employer
+I WANT a candidate search application
+SO THAT I can hire the best candidates
 ```
 
-* Replace `plugin:@typescript-eslint/recommended` with `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`.
-* Optionally, add `plugin:@typescript-eslint/stylistic-type-checked`.
-* Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` and `plugin:react/jsx-runtime` to the `extends` list.
+## Acceptance Criteria
+```
+GIVEN a candidate search application
+WHEN the candidate search page loads
+THEN the information for one candidate should be displayed, including the candidate's name, username, location, avatar, email, html_url, and company
+WHEN I click the "+" button
+THEN the candidate should be saved to the list of potential candidates and the next candidate's information should be displayed
+WHEN I click the "-" button
+THEN the next candidate's information should be displayed without saving the current candidate
+WHEN there are no candidates available to review
+THEN an appropriate message should be shown indicating no more candidates are available
+WHEN the potential candidates page loads
+THEN the user should see a list of previously saved potential candidates with their name, username, location, avatar, email, html_url, and company
+WHEN the page reloads
+THEN the list of potential candidates should persist and be available for viewing
+WHEN there are no potential candidates
+THEN an appropriate message should be displayed indicating no candidates have been accepted
+WHEN I click the "-" button
+THEN the next candidate's information should be displayed without saving the current candidate
+```
 
----
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+## Installation
+
+- npm install
+
+## Usage
+
+- npm run dev
+
+## Contributing
+
+[Fabricio Laboriel](https://github.com/fab-labo)
+
+## Questions
+
+Email: [click here](mailto:fabriciolaboriel@gmail.com)
+Github Profile: https://github.com/fab-labo 
+
